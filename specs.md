@@ -24,7 +24,6 @@ Il n'y a pas d'interface web disponible (hormis la page de status), tout passe p
 - `status`: status of the bot -> ping + status + url status + nb projets + nb tâche + nb user
 - `doc|help`: show url to GitHub doc of the bot
 - `credits`: show credits -> author, git, ...
-- `settings`: show a menu to define general settings for the server or private channel
 - `projects search=<string> [page=<int>=0]`: look for projects
 - `my`: list my projects
 - `current [id=<int>]`: show or set current project. Show also a menu to define settings of project
