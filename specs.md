@@ -25,6 +25,7 @@ Il n'y a pas d'interface web disponible (hormis la page de status), tout passe p
 - `doc|help`: show url to GitHub doc of the bot
 - `credits`: show credits -> author, git, ...
 - `projects search=<string> [page=<int>=0]`: look for projects
+- `create name=<string>`: create a new project
 - `my`: list my projects
 - `current [id=<int>]`: show or set current project. Show also a menu to define settings of project
 - `tasks`: list tasks of current project
