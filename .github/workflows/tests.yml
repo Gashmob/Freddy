@@ -50,6 +50,8 @@ jobs:
       - name: Install dependencies
         run: pnpm install
 
+      - name: Prepare typecheck
+        run: echo '{"token":"token"}' > config.json
       - name: Run typecheck
         run: pnpm run typecheck
 
