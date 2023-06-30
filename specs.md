@@ -26,8 +26,17 @@ Il n'y a pas d'interface web disponible (hormis la page de status), tout passe p
 - `credits`: show credits -> author, git, ...
 - `projects search=<string> [page=<int>=0]`: look for projects
 - `create name=<string>`: create a new project
-- `my`: list my projects
+- `list`: list my projects
 - `current [id=<int>]`: show or set current project. Show also a menu to define settings of project
 - `tasks`: list tasks of current project
 - `task id=<int> [action=<create|delete>]`: create, delete or show a task. Show also a menu to update task
 - `subscribe [id=int]`: subscribe a server to a project, or list all subscriptions
+
+## Tasks
+
+- [ ] Status + Doc + Credits
+- [ ] Create project + List projects + Current project
+- [ ] Create|Delete task + List tasks
+- [ ] Update task
+- [ ] Update project
+- ... (Notifications, GitHub link, ...)
