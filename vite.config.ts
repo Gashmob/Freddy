@@ -1,5 +1,6 @@
 import { resolve } from 'node:path';
 import { defineConfig } from 'vitest/config';
+import { dependencies } from './package.json';
 
 export default defineConfig({
     build: {
@@ -9,6 +10,9 @@ export default defineConfig({
             formats: ['es'],
         },
         target: 'modules',
+        rollupOptions: {
+            external: Object.keys(dependencies),
+        },
     },
     test: {
         include: ['tests/**/*.test.ts'],

@@ -17,5 +17,10 @@
     "typescript": "^5.0.2",
     "vite": "^4.3.9",
     "vitest": "^0.32.2"
+  },
+  "dependencies": {
+    "@discordjs/core": "^0.6.0",
+    "@discordjs/rest": "^1.7.1",
+    "@discordjs/ws": "^0.8.3"
   }
 }
