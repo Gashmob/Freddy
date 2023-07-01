@@ -8,6 +8,7 @@ import {
 } from '@discordjs/core';
 import { client_id, token } from '../config.json';
 import commands from './commands';
+import './utils';
 
 const rest = new REST({ version: '10' }).setToken(token);
 

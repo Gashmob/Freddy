@@ -11,7 +11,7 @@ export default defineConfig({
         },
         target: 'modules',
         rollupOptions: {
-            external: Object.keys(dependencies),
+            external: [...Object.keys(dependencies), 'node:fs'],
         },
     },
     test: {
