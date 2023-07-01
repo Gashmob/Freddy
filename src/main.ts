@@ -33,6 +33,9 @@ client.on(
             interaction.type !== InteractionType.ApplicationCommand ||
             !commands.has(interaction.data.name)
         ) {
+            if (interaction.type === InteractionType.ApplicationCommand) {
+                console.warn(`Command ${interaction.data.name} not found`);
+            }
             return;
         }
 

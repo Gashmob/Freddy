@@ -1,6 +1,7 @@
 import { EmbedBuilder, SlashCommandBuilder } from '@discordjs/builders';
 import { MessageFlags } from '@discordjs/core';
 import { Command } from './command';
+import { colors } from '../tools';
 
 export default {
     name: 'status',
@@ -15,6 +16,7 @@ export default {
         const embed = new EmbedBuilder()
             .setTitle('Freddy status')
             .setDescription(':green_circle: Online')
+            .setColor(colors.info)
             .addFields(
                 { name: '# Projects', value: `${nb_projects}` },
                 { name: '# Tasks', value: `${nb_tasks}` },
