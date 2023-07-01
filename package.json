@@ -7,18 +7,22 @@
     "typecheck": "tsc --noEmit",
     "build": "tsc && vite build",
     "watch": "vite build --watch --mode development --minify false",
+    "dev": "nodemon ./dist/main.js -w ./dist/main.js",
     "test": "vitest",
     "coverage": "vitest --coverage",
     "prettier": "prettier"
   },
   "devDependencies": {
     "@vitest/coverage-v8": "^0.32.2",
+    "nodemon": "^2.0.22",
     "prettier": "2.8.8",
     "typescript": "^5.0.2",
     "vite": "^4.3.9",
     "vitest": "^0.32.2"
   },
   "dependencies": {
+    "@discordjs/builders": "^1.6.3",
+    "@discordjs/collection": "^1.5.1",
     "@discordjs/core": "^0.6.0",
     "@discordjs/rest": "^1.7.1",
     "@discordjs/ws": "^0.8.3"
