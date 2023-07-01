@@ -22,7 +22,7 @@ export default defineConfig({
             include: ['src/**/*.ts'],
             exclude: ['tests/**/*.test.ts'],
             all: true,
-            reporter: [['lcov', { projectRoot: './src' }]],
+            reporter: [['lcov', { projectRoot: './src' }], ['text']],
         },
     },
 });
