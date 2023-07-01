@@ -20,6 +20,7 @@ export default {
                 { name: '# Tasks', value: `${nb_tasks}` },
                 { name: '# Users', value: `${nb_users}` },
             )
+            .setTimestamp()
             .toJSON();
 
         await api.interactions.reply(interaction.id, interaction.token, {
