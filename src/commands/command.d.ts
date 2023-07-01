@@ -1,8 +1,11 @@
 import { SlashCommandBuilder } from '@discordjs/builders';
-import { API, APIInteraction } from '@discordjs/core';
+import { API, APIApplicationCommandInteraction } from '@discordjs/core';
 
 export declare interface Command {
     name: string;
     data: SlashCommandBuilder;
-    execute: (interaction: APIInteraction, api: API) => Promise<void>;
+    execute: (
+        interaction: APIApplicationCommandInteraction,
+        api: API,
+    ) => Promise<void>;
 }

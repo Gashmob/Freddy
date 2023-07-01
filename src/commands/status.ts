@@ -1,4 +1,4 @@
-import { SlashCommandBuilder } from '@discordjs/builders';
+import { EmbedBuilder, SlashCommandBuilder } from '@discordjs/builders';
 import { MessageFlags } from '@discordjs/core';
 import { Command } from './command';
 
@@ -9,8 +9,21 @@ export default {
         .setDescription('Display status of the bot')
         .setDMPermission(true),
     async execute(interaction, api) {
+        const nb_projects = 0;
+        const nb_tasks = 0;
+        const nb_users = 0;
+        const embed = new EmbedBuilder()
+            .setTitle('Freddy status')
+            .setDescription(':green_circle: Online')
+            .addFields(
+                { name: '# Projects', value: `${nb_projects}` },
+                { name: '# Tasks', value: `${nb_tasks}` },
+                { name: '# Users', value: `${nb_users}` },
+            )
+            .toJSON();
+
         await api.interactions.reply(interaction.id, interaction.token, {
-            content: 'Pong!',
+            embeds: [embed],
             flags: MessageFlags.Ephemeral,
         });
     },
