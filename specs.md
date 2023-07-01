@@ -34,7 +34,7 @@ Il n'y a pas d'interface web disponible (hormis la page de status), tout passe p
 
 ## Tasks
 
-- [ ] Status + Doc + Credits
+- [x] Status + Doc + Credits
 - [ ] Create project + List projects + Current project
 - [ ] Create|Delete task + List tasks
 - [ ] Update task
