@@ -19,7 +19,7 @@ export default defineConfig({
         watch: false,
         coverage: {
             provider: 'v8',
-            include: ['src/*.ts'],
+            include: ['src/**/*.ts'],
             exclude: ['tests/**/*.test.ts'],
             all: true,
             reporter: [['lcov', { projectRoot: './src' }]],
