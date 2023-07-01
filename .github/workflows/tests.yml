@@ -71,5 +71,7 @@ jobs:
       - name: Install dependencies
         run: pnpm install
 
+      - name: Prepare build
+        run: echo '{"token":"token", "client_id":"client_id"}' > config.json
       - name: Run build
         run: pnpm run build
